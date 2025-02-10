@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-sTJbpEIrpJUmLmTSkhKizRRWp17TQp.png"
+                alt="TravelBloom Logo" class="logo-icon">
+            <span class="logo-text">Trippy</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Enter a destination or keyword"
+                aria-label="Search destinations">
+            <button class="btn btn-search" id="searchBtn">Search</button>
+            <button class="btn btn-clear" id="clearBtn">Clear</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Explore<br>
+                Dream<br>
+                Destination
+            </h1>
+            <p class="hero-description">
+                It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while
+                pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+            </p>
+            <a href="#book" class="book-now-btn">Book Now</a>
+        </div>
+    </section>
+
+    <div id="card-container" class="hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

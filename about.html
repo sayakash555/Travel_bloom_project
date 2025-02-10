@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #fff;
+        }
+
+        .about-section {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .about-section::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('img2.jpg');
+            background-size: cover;
+            background-position: center;
+            /* filter: brightness(0.5); */
+        }
+
+        .about-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 128, 128, 0.479) 0%, rgba(12, 0, 0, 0) 100%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-title {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .about-text {
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            line-height: 1.6;
+            margin-bottom: 4rem;
+            max-width: 900px;
+        }
+
+        .highlight {
+            font-weight: 600;
+        }
+
+        .team-section {
+            margin-top: 4rem;
+        }
+
+        .team-title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            margin-bottom: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .member-icon {
+            font-size: 2rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .member-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-role {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .member-description {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media(max-width: 768px) {
+
+            /* about section */
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="about-section">
+        <div class="content">
+            <!-- <a href="/" class="logo-container">
+                <img src="logo.png" class="logo-icon">
+                <span class="logo-text">TravelBloom</span>
+            </a> -->
+            <h1 class="about-title">ABOUT US</h1>
+
+            <div class="about-text">
+                <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent
+                    services/products to our customers. Our mission is to <span class="highlight">provide the best
+                        experience</span> for people traveling to different destinations around the world.</p>
+                <p>Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in <span
+                        class="highlight">putting our customers first</span> and <span class="highlight">working
+                        together</span> to achieve our goals.</p>
+                <p>Feel free to explore our website to learn more about what we offer!</p>
+            </div>
+
+            <div class="team-section">
+                <h2 class="team-title">Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <i class="fas fa-trophy member-icon"></i>
+                        <h3 class="member-name">John Doe</h3>
+                        <div class="member-role">CEO</div>
+                        <p class="member-description">John Doe is responsible for...</p>
+                    </div>
+
+                    <div class="team-member">
+                        <i class="fas fa-trophy member-icon"></i>
+                        <h3 class="member-name">Celina Thomas</h3>
+                        <div class="member-role">Team Lead</div>
+                        <p class="member-description">Celina Thomas is responsible for...</p>
+                    </div>
+
+                    <div class="team-member">
+                        <i class="fas fa-trophy member-icon"></i>
+                        <h3 class="member-name">Mike Tysen</h3>
+                        <div class="member-role">Delivery Head</div>
+                        <p class="member-description">Mike Tysen is responsible for...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
